@@ -22,7 +22,25 @@ import {
   carrent,
   jobit,
   tripguide,
-  threejs,
+  flutter,
+  python,
+  Java,
+  C,
+  Cpp,
+  tensorflow,
+  sklearn,
+  pandas,
+  numpy,
+  Excelerate,
+  LearnTrinity,
+  CodeingHive,
+  seniorconnect,
+  fintracker,
+  sih,
+  linuxfirewall,
+  MedicalGPT,
+  OSKernalDemo,
+  COX3,
 } from "../assets";
 
 export const navLinks = [
@@ -99,64 +117,82 @@ const technologies = [
     name: "figma",
     icon: figma,
   },
+  {
+    name: "flutter",
+    icon: flutter,
+  },
+  {
+    name: "python",
+    icon: python,
+  },
+  {
+    name: "Java",
+    icon: Java,
+  },
+  {
+    name: "C",
+    icon: C,
+  },
+  {
+    name: "C++",
+    icon: Cpp,
+  },
+  {
+    name: "TensorFlow",
+    icon: tensorflow,
+  },
+  {
+    name: "sklearn",
+    icon: sklearn,
+  },
+  {
+    name: "pandas",
+    icon: pandas,
+  },
+  {
+    name: "numpy",
+    icon: numpy,
+  },
+
 
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Project Manager",
+    company_name: "Excelerate",
+    icon: Excelerate,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "Aug 2023 - Sep 2023",
     points: [
-      " Dummy data",
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Managed a team of 6 to successfully plan and conduct a Global Educational event by Saint Louis University with a budget of $30,000.",
+"Prepared RACI Matrix, Risk Register, Budget Planning, and Allotment.",
+"Metproject deadlines.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Open Source Mintainer",
+    company_name: "LearnTrinity",
+    icon: LearnTrinity,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "Sep 2023 - ongoing",
     points: [
-      "Just Hire me already :))",
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "A community-driven non-profit organization aimed at empowering developers and fostering an inclusive developer community.",
+"npm package available for easy template integration.",
+" Github LINK: https://github.com/LearnTrinity",
+"Deployment LINK: https://learntrinity.vercel.app/"
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    title: "Open Source Mintainer",
+    company_name: "Codeing Hive",
+    icon: CodeingHive,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "Sep 2023 - Ongoing",
     points: [
-      "I'm serious, hire me already :))",
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Just Kidding :))",
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "An open-source platform similar to CodePen.io with multi-language support.",
+      "Github LINK: https://github.com/CodeingHive",
+      "Deployment LINK: https://codeinghive.vercel.app/"
     ],
   },
 ];
@@ -164,33 +200,117 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    name: "Lorem Ipsum",
-    designation: ":))",
-    company: "Not telling",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    name: "Nope",
-    designation: "111",
-    company: "NOt telling again",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    name: "Nothin",
-    designation: "qqq",
-    company: "Not telling again",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "I was the Team Lead of Himanshu in Excelerate Project Management Internship. He is an excellent individual driven by his passion to learn, explore and innovate. He accomplishes the tasks assigned to him in perfect manner and well before designated time. His ethics and values are a cherry on top of his personality. I wish him success for future endeavours.",
+    name: "Ashar Javid",
+    designation: "Team Lead",
+    company: "Excelerate",
+    image: "https://media.licdn.com/dms/image/D4D03AQH-ncY0BJSAZg/profile-displayphoto-shrink_800_800/0/1680796169902?e=2147483647&v=beta&t=39OWnGbyU7SYqp8MFMrYFdIyIdDGFhUtYbAQXgc9mhc",
   },
 ];
 
 const projects = [
+   {
+    name: "FinTracker", 
+    description: "Created a mobile application using Flutter to track monthly expenses and stored data in a local SQLite database. Implemented features to organize tasks in different accounts and categories, and set limits to categories.",
+    tags: [
+      {
+        name: "Flutter",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "SQLLite",
+        color: "green-text-gradient",
+      },
+    ],
+    image: fintracker,
+    source_code_link: "https://github.com/Himasnhu-AT/fintracker",
+    deployment_link: "https://github.com/Himasnhu-AT/fintracker/releases/tag/1.0.0",
+   },
+
   {
-    name: "COX# ML Model",
+    name: "SeniorConnect",
+    description:
+      "Developed a mobile application to facilitate connections between seniors and juniors, allowing them to share projects and discuss ideas. Future plans include adding a community tab, message tab, and improving backend connectivity.",
+    tags: [
+      {
+        name: "Flutter",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Firebase",
+        color: "green-text-gradient",
+      },
+    ],
+    image: seniorconnect,
+    source_code_link: "https://github.com/Himasnhu-AT/seniorconnect",
+    deployment_link: "https://github.com/Himasnhu-AT/seniorconnect/releases/tag/beta",
+  },
+
+  {
+    name: "E-Waste Facility Locator",
+    description:
+      "Working on a project for Smart India Hackathon, aimed at locating E-waste facilities, scheduling E-waste pickups, and rewarding users based on precious metal content. \n\n NEXT: Update site to new tech stack",
+    tags: [
+      {
+        name: "html, css, js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "node js, express js",
+        color: "green-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "react",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "rust",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "postgreSQL",
+        color: "yellow-text-gradient",
+      }
+  
+    ],
+    image: sih,
+    source_code_link: "https://github.com/Himasnhu-AT/SIH",
+    deployment_link: "https://e-waste-facilitylocator.netlify.app/",
+  },
+  
+  {
+    name: "Medical GPT",
+    description:
+      "Developed LLM Models to provide accurate medical advice based on trained data from medical books. Most of the code is closed source due to NDA.",
+    tags: [
+      {
+        name: "PYTHON",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Sentense Transformers",
+        color: "green-text-gradient",
+      },
+      {
+        name: "lang Chain",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Falcon LLM, LLAMA2",
+        color: "yellow-text-gradient",
+      },
+    ],
+    image: MedicalGPT,
+    source_code_link: "https://github.com/Himasnhu-AT/MedicalGPT",
+    deployment_link: "https://github.com/Himasnhu-AT/MedicalGPT",
+  },
+
+  {
+    name: "COX3 ML Model",
     description:
       "ML Model designed on 200K images, to detect the presence of COVID-19 in a patients, from lung scans. Overall accuracy of 81% from training time of 8 hours, EXPECTED to be: 36 for best efficiency.",
     tags: [
@@ -211,8 +331,9 @@ const projects = [
         color: "yellow-text-gradient",
       },
     ],
-    image: carrent,
+    image: COX3,
     source_code_link: "https://github.com/Himasnhu-AT/COX3-ML-Model/",
+    deployment_link: "https://github.com/Himasnhu-AT/COX3-ML-Model/",
   },
   {
     name: "Mini Linux Firewall",
@@ -228,8 +349,9 @@ const projects = [
         color: "green-text-gradient",
       },
     ],
-    image: jobit,
+    image: linuxfirewall,
     source_code_link: "https://github.com/Himasnhu-AT/Linux_mini-Firewall",
+    deployment_link: "https://github.com/Himasnhu-AT/Linux_mini-Firewall"
   },
   {
     name: "OS Kernel Demo",
@@ -249,8 +371,9 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: OSKernalDemo,
     source_code_link: "https://github.com/Himasnhu-AT/OS-kernal-demo",
+    deployment_link: "https://github.com/Himasnhu-AT/OS-kernal-demo"
   },
 ];
 

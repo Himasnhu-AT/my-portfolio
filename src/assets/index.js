@@ -20,15 +20,35 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import flutter from "./tech/flutter.png";
+import python from "./tech/python.jpeg";
+import Java from "./tech/java.png";
+import C from "./tech/c.png";
+import Cpp from "./tech/cpp.png";
+import tensorflow from "./tech/tensorflow.jpeg";
+import sklearn from "./tech/sklearn.png";
+import pandas from "./tech/pandas.jpeg";
+import numpy from "./tech/numpy.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import Excelerate from "./company/Excelerate.png";
+import LearnTrinity from "./company/LearnTrinity.svg";
+// import CodeingHive from "./company/CodeingHive.png";
+import CodeingHive from "./company/LearnTrinity.svg";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import fintracker from "./fintracker.jpg";
+import seniorconnect from "./seniorconnect.jpg";
+import sih from "./sih.png";
+import linuxfirewall from "./linuxfirewall.png";
+import MedicalGPT from "./MedicalGPT.png";
+import OSKernalDemo from "./OSKernalDemo.png";
+import COX3 from "./COX3.png";
 
 export {
   logo,
@@ -59,4 +79,23 @@ export {
   carrent,
   jobit,
   tripguide,
+  flutter,
+  python,
+  Java,
+  C,
+  Cpp,
+  tensorflow,
+  sklearn,
+  pandas,
+  numpy,
+  Excelerate,
+  LearnTrinity,
+  CodeingHive,
+  fintracker,
+  seniorconnect,
+  sih,
+  linuxfirewall,
+  MedicalGPT,
+  OSKernalDemo,
+  COX3,
 };

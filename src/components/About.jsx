@@ -23,7 +23,7 @@ const ServiceCard = ({ index, title, icon }) => (
       >
         <img
           src={icon}
-          alt='web-development'
+          alt='service-icon'
           className='w-16 h-16 object-contain'
         />
 
@@ -47,11 +47,11 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm a skilled software developer with experience in Python, C++, Flutter
-        JavaScript, and expertise in frameworks like TensorFlow, Node.js,
-        ... . I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+        I'm a skilled student and aspiring AI researcher with a strong background in programming languages like Python,
+        C++, and JavaScript. I have expertise in frameworks like TensorFlow and Node.js, and I'm passionate about AI/ML
+        development. As a quick learner and problem solver, I collaborate closely with clients to create efficient,
+        scalable, and user-friendly solutions that address real-world challenges. Let's work together to turn your
+        ideas into reality!
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
