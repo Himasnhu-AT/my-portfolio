@@ -36,6 +36,14 @@ const ServiceCard = ({ index, title, icon }) => (
 );
 
 const About = () => {
+  const downloadResume = () => {
+    const resumeURL = './resume.pdf';
+    const link = document.createElement('a');
+    link.href = resumeURL;
+    link.download = 'Himanshu_Resume.pdf';
+    link.click();
+  };
+
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -52,7 +60,16 @@ const About = () => {
         development. As a quick learner and problem solver, I collaborate closely with clients to create efficient,
         scalable, and user-friendly solutions that address real-world challenges. Let's work together to turn your
         ideas into reality!
+
+        <motion.button
+          className="mt-4 border border-[#FFA500] text-[#FFA500] hover:bg-[#FFA500] hover:text-black px-4 py-2 rounded-full focus:outline-none transform scale-100 hover:scale-105"
+          whileHover={{ scale: 1.05 }}
+          onClick={downloadResume}
+        >
+          Download Resume
+        </motion.button>
       </motion.p>
+
 
       <div className='mt-20 flex flex-wrap gap-10'>
         {services.map((service, index) => (

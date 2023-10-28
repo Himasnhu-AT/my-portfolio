@@ -1,26 +1,23 @@
-import { BrowserRouter } from "react-router-dom";
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import ThreeApp from './3D-website/3D-App';
+import URIError from './NotFound';
+import TwoApp from './2D-website/App';
 
-import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from "./components";
+function App() {
 
-const App = () => {
   return (
-    <BrowserRouter>
-      <div className='relative z-0 bg-primary'>
-        <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
-          <Navbar />
-          <Hero />
-        </div>
-        <About />
-        <Experience />
-        <Tech />
-        <Works />
-        <Feedbacks />
-        <div className='relative z-0'>
-          <Contact />
-          <StarsCanvas />
-        </div>
-      </div>
-    </BrowserRouter>
+    <Router>
+
+      <Routes>
+        <Route path="/" element={<ThreeApp />} />
+        <Route path="/2D-website" element={<TwoApp />} />
+        <Route path="/3D-website" element={<ThreeApp />} />
+
+        <Route path="*" element={<URIError />} />
+      </Routes>
+
+    </Router>
   );
 }
 
