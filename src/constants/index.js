@@ -79,14 +79,6 @@ const services = [
 
 const technologies = [
   {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
     name: "JavaScript",
     icon: javascript,
   },
@@ -108,11 +100,6 @@ const technologies = [
     name: "MongoDB",
     icon: mongodb,
   },
-
-  {
-    name: "git",
-    icon: git,
-  },
   {
     name: "figma",
     icon: figma,
@@ -130,10 +117,6 @@ const technologies = [
     icon: Java,
   },
   {
-    name: "C",
-    icon: C,
-  },
-  {
     name: "C++",
     icon: Cpp,
   },
@@ -148,10 +131,6 @@ const technologies = [
   {
     name: "pandas",
     icon: pandas,
-  },
-  {
-    name: "numpy",
-    icon: numpy,
   },
 
 
