@@ -4,6 +4,7 @@ import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 
 const Hero = () => {
+
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div
@@ -19,8 +20,6 @@ const Hero = () => {
             Hi, I'm <span className='text-[#915EFF]'>Himanshu</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I'm a Student and Aspiring AI Researcher
-            <br className='sm:block hidden' />
             Coder in the day, reader at night, and writer on weekends
           </p>
         </div>

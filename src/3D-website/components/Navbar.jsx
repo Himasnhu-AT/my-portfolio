@@ -5,10 +5,12 @@ import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
 
+
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -46,7 +48,12 @@ const Navbar = () => {
           </p>
         </Link>
 
+        <p className='text-black[400] text-[12px] font-bold cursor-pointer flex '>
+          View in Desktop for best view
+        </p>
+
         <ul className='list-none hidden sm:flex flex-row gap-10'>
+          <Link to={"/2D-website"}>2D-website</Link>
           {navLinks.map((nav) => (
             <li
               key={nav.id}
