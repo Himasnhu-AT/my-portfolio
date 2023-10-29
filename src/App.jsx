@@ -10,7 +10,7 @@ function App() {
     <Router>
 
       <Routes>
-        <Route path="/" element={<ThreeApp />} />
+        <Route path="/" element={<TwoApp />} />
         <Route path="/2D-website" element={<TwoApp />} />
         <Route path="/3D-website" element={<ThreeApp />} />
 
