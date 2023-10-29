@@ -25,6 +25,7 @@ const TwoApp = () => {
 
       </div>
     </div>
+
   );
 }
 
