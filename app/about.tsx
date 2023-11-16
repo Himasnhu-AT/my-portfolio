@@ -29,9 +29,9 @@ const timelineData: TimelineItem[] = [
         date: '2022',
     },
     {
-        title: 'My Journey as a Developer is still going on...',
+        title: 'College + Ongoing Developer journey :)',
         date: 'Ongoing',
-        description: "I am still learning new things and trying to improve my skills. Right now have an arsenal of 21 Languages, frameworks, and libraries. Exloring ML further and trying to make some cool projects."
+        description: "Student at NIT-KKR. I am still learning new things and trying to improve my skills. Right now have an arsenal of 21 Languages, frameworks, and libraries. Exloring ML further and trying to make some cool projects."
     },
 ];
 
@@ -52,7 +52,7 @@ const AboutMe: React.FC = () => {
                         </p>
                     </div>
                 </section>
-                <div className=' lg:mt-60 sm:mt-20 '>
+                <div className=' lg:mt-60 sm:mt '>
                     <div className="text-center">
                         <h1 className="text-4xl font-bold text-emerald-300 mb-4 justify-start items-start">My Development Time Line </h1>
                     </div>
@@ -62,9 +62,11 @@ const AboutMe: React.FC = () => {
                                 <span className="absolute flex items-center justify-center w-6 h-6 bg-white rounded-full -start-3 ring-8 ring-white">
 
                                 </span>
-                                <h3 className="flex items-center mb-1 text-lg font-semibold text-emerald-400">{item.title}</h3>
-                                <time className="block mb-2 text-sm font-normal leading-none text-emerald-200 text-muted-foreground">{item.date}</time>
-                                {item.description && <p className="mb-4 text-base font-normal text-emerald-200 text-muted-foreground">{item.description}</p>}
+                                <div className='shadow-md shadow-gray-700 p-2'>
+                                    <h3 className="flex items-center mb-1 text-lg font-semibold text-emerald-400">{item.title}</h3>
+                                    <time className="block mb-2 text-sm font-normal leading-none text-emerald-200 text-muted-foreground">{item.date}</time>
+                                    {item.description && <p className="mb-4 text-base font-normal text-emerald-200 text-muted-foreground">{item.description}</p>}
+                                </div>
                             </li>
                         ))}
                     </ol>

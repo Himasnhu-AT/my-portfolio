@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import Home from './page'
 import AboutMe from './about'
+import Projects from './projects'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -26,6 +27,7 @@ export default function RootLayout({
         <Home />
 
         <AboutMe />
+        <Projects />
       </body>
     </html>
   )
