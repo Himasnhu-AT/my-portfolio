@@ -25,9 +25,9 @@ const MobileScreen = () => {
           <Link href="/about">
             <li className="mx-2">About</li>
           </Link>
-          <Link href="/uiux">
+          {/* <Link href="/uiux">
             <li className="mx-2">UI-UX </li>
-          </Link>
+          </Link> */}
           <Link href="/projects">
             <li className="mx-2">Projects</li>
           </Link>

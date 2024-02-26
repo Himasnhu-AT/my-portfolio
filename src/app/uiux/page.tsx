@@ -10,7 +10,7 @@ const Page = () => {
   );
 };
 
-export const projects = [
+const projects = [
   {
     title: "Moonbeam",
     link: "https://gomoonbeam.com",
@@ -18,4 +18,5 @@ export const projects = [
       "https://aceternity.com/images/products/thumbnails/new/moonbeam.png",
   },
 ];
+
 export default Page;

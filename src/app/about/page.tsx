@@ -17,7 +17,7 @@ const AboutMe = () => {
         <p className="mt-4 font-normal text-base text-neutral-300 max-w-lg text-center mx-auto">
           Passionate software engineer with a track record of crafting impactful
           products. I thrive on collaborative projects and enjoy working with
-          talented individuals. Let's connect and explore opportunities to
+          talented individuals. Let&apos;s connect and explore opportunities to
           create something remarkable together. copy.
         </p>
       </div>

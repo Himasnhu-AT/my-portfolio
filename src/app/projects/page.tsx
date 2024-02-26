@@ -68,9 +68,8 @@ const ExperiencePage = () => {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-center items-center">
           {Projects.map((items, index) => (
-            <div className="m-5">
+            <div className="m-5" key={index}>
               <AnimatedPin
-                key={index}
                 items={{
                   title: items.title,
                   description: items.description,
@@ -101,7 +100,7 @@ const AnimatedPin: React.FC<AnimatedPinProps> = ({ items }) => {
   );
 };
 
-export const Card = ({
+const Card = ({
   className,
   children,
 }: {
@@ -121,7 +120,8 @@ export const Card = ({
     </div>
   );
 };
-export const CardTitle = ({
+
+const CardTitle = ({
   className,
   children,
 }: {
@@ -134,7 +134,8 @@ export const CardTitle = ({
     </h4>
   );
 };
-export const CardDescription = ({
+
+const CardDescription = ({
   className,
   children,
 }: {

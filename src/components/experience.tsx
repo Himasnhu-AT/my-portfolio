@@ -13,7 +13,7 @@ export const ProjectsPage = ({
     title: string;
     description: string;
     link: string;
-    name: string;
+    name?: string;
   }[];
   className?: string;
 }) => {

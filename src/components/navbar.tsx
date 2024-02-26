@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import MobileScreen from "./mobileScreen";
+import Image from "next/image";
 
 const Navbar = () => {
   const [mobileScreen, setMobileScreen] = useState(false);
@@ -17,7 +18,10 @@ const Navbar = () => {
   return (
     <nav className="text-white w-full flex items-center justify-between px-9 md:px-10 lg:px-24">
       <div className="flex flex-row justify-between items-center w-full h-16 px-4">
-        <div className="text-2xl font-bold">Logo</div>
+        <Link href="/" className="flex flex-row">
+          <Image src={"/Logo.png"} alt={"himanshu"} width={50} height={25} />
+          <div className="text-2xl font-bold pt-2">Himanshu</div>
+        </Link>
         {mobileScreen ? (
           <MobileScreen />
         ) : (
@@ -29,9 +33,9 @@ const Navbar = () => {
               <Link href="/about">
                 <li className="mx-2">About</li>
               </Link>
-              <Link href="/uiux">
+              {/* <Link href="/uiux">
                 <li className="mx-2">UI-UX </li>
-              </Link>
+              </Link> */}
               <Link href="/projects">
                 <li className="mx-2">Projects</li>
               </Link>
