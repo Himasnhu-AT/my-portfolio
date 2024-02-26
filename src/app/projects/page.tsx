@@ -1,4 +1,9 @@
-import { ProjectsPage } from "@/components/experience";
+"use client";
+import { PinContainer } from "@/components/3DPing";
+import { SparklesCore } from "@/components/sparkles";
+import { cn } from "@/lib/utils";
+import Link from "next/link";
+import React from "react";
 
 const Projects = [
   {
@@ -39,12 +44,113 @@ const Projects = [
   },
 ];
 
-const Page = () => {
+const ExperiencePage = () => {
   return (
-    <div className="pt-12 px-9">
-      <ProjectsPage items={Projects} />
+    <div className="">
+      <div className=" w-full bg-black flex flex-col items-center justify-center rounded-md pt-24 sm:pt-24 md:pt-28 lg:pt-32">
+        <h1 className="md:text-7xl text-3xl lg:text-9xl font-bold text-center text-white relative z-20">
+          Projects
+        </h1>
+        <div className="w-[40rem] h-40 relative">
+          <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
+          <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />
+          <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[5px] w-1/4 blur-sm" />
+          <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/4" />
+          <SparklesCore
+            background="transparent"
+            minSize={0.4}
+            maxSize={2}
+            particleDensity={1200}
+            className="w-full h-full"
+            particleColor="#FFFFFF"
+          />
+          <div className="absolute inset-0 w-full h-full bg-black [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]" />
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-center items-center">
+          {Projects.map((items, index) => (
+            <div className="m-5">
+              <AnimatedPin
+                key={index}
+                items={{
+                  title: items.title,
+                  description: items.description,
+                  link: items.link,
+                }}
+              />
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 };
 
-export default Page;
+interface AnimatedPinProps {
+  items: {
+    title: string;
+    description: string;
+    link: string;
+  };
+}
+const AnimatedPin: React.FC<AnimatedPinProps> = ({ items }) => {
+  return (
+    <Card className=" min-w-full min-h-full">
+      <CardTitle>{items.title}</CardTitle>
+      <CardDescription>{items.description}</CardDescription>
+    </Card>
+  );
+};
+
+export const Card = ({
+  className,
+  children,
+}: {
+  className?: string;
+  children: React.ReactNode;
+}) => {
+  return (
+    <div
+      className={cn(
+        "rounded-2xl h-full w-full p-4 overflow-hidden bg-black border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20",
+        className
+      )}
+    >
+      <div className="relative z-50">
+        <div className="p-4">{children}</div>
+      </div>
+    </div>
+  );
+};
+export const CardTitle = ({
+  className,
+  children,
+}: {
+  className?: string;
+  children: React.ReactNode;
+}) => {
+  return (
+    <h4 className={cn("text-zinc-100 font-bold tracking-wide mt-4", className)}>
+      {children}
+    </h4>
+  );
+};
+export const CardDescription = ({
+  className,
+  children,
+}: {
+  className?: string;
+  children: React.ReactNode;
+}) => {
+  return (
+    <p
+      className={cn(
+        "mt-8 text-zinc-400 tracking-wide leading-relaxed text-sm",
+        className
+      )}
+    >
+      {children}
+    </p>
+  );
+};
+
+export default ExperiencePage;

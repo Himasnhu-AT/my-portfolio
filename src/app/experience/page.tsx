@@ -1,30 +1,49 @@
-"use client";
-import { SparklesCore } from "@/components/sparkles";
-import React from "react";
+import { ProjectsPage } from "@/components/experience";
 
-const ExperiencePage = () => {
+interface experienceProps {
+  title: string;
+  description: string;
+  link: string;
+  name: string;
+}
+
+const Experiences: experienceProps[] = [
+  {
+    title: "Founding Software Engineer - CTO",
+    description:
+      "Recieved funding of 325k USD in azure credits, allocated dynamically. Designed and implemented a robust REST API, integrating MongoDB, PostgreSQL, and Redis, while managing an SMTP server for streamlined mailing operations. Led system design, and conducted unit and integration tests, ensuring reliability, scalability, and optimal performance. Implemented payment processing with Stripe, enhancing financial capabilities and user experience. Improved the performance of Web App, decreasing loading time by over 80% (200ms).",
+    link: "",
+    name: "OpenEdu",
+  },
+  {
+    title: "Open Source Collaborator | Project Mentor",
+    description:
+      "Actively contributing to various Open Source Projects, mentoring students, fostering collaborative development and community engagement. Collaborating with the Tublian team to develop DevDocGenie, an innovative RAG-based AI-chatbot that facilitates user interaction with documentation, enhancing accessibility and understanding. Reverse Engineering Github Copilot, able to reverse engineer samsung's live translation on call and trying to replicate it.",
+    link: "",
+    name: "Tublian",
+  },
+  {
+    title: "Collaborator | Core-Technical Team",
+    description:
+      "Contributed to the OpenSource DGP(in collaboration with Tibil, actively enhancing features and functionality within the project. Provided mentorship to students, guiding them on the intricacies of open-source contributions and fostering their growth within the community.",
+    link: "",
+    name: "Tibil | C4GT",
+  },
+  {
+    title: "Project Manager - Excelerate",
+    description:
+      "Successfully managed a team of 6 to plan and conduct a Global Educational event by Saint Louis University with a budget of USD 30,000. Prepared RACI Matrix, Risk Register, Budget Planning, and Allotment. Consistently met and exceeded project deadlines.",
+    link: "",
+    name: "Saint Louis University | Excelerate",
+  },
+];
+
+const Page = () => {
   return (
-    <div className="h-[40rem] w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">
-      <h1 className="md:text-7xl text-3xl lg:text-9xl font-bold text-center text-white relative z-20">
-        Experience
-      </h1>
-      <div className="w-[40rem] h-40 relative">
-        <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
-        <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />
-        <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[5px] w-1/4 blur-sm" />
-        <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/4" />
-        <SparklesCore
-          background="transparent"
-          minSize={0.4}
-          maxSize={1}
-          particleDensity={1200}
-          className="w-full h-full"
-          particleColor="#FFFFFF"
-        />
-        <div className="absolute inset-0 w-full h-full bg-black [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
-      </div>
+    <div className="pt-12 px-9">
+      <ProjectsPage items={Experiences} />
     </div>
   );
 };
 
-export default ExperiencePage;
+export default Page;

@@ -13,6 +13,7 @@ export const ProjectsPage = ({
     title: string;
     description: string;
     link: string;
+    name: string;
   }[];
   className?: string;
 }) => {
@@ -51,7 +52,8 @@ export const ProjectsPage = ({
             )}
           </AnimatePresence>
           <Card>
-            <CardTitle>{item.title}</CardTitle>
+            <CardTitle className="text-3xl font-normal">{item.title}</CardTitle>
+            <CardTitle>{item.name}</CardTitle>
             <CardDescription>{item.description}</CardDescription>
           </Card>
         </Link>
