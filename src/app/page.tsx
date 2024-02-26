@@ -1,16 +1,14 @@
 "use client";
 
 import { LampContainer } from "@/components/lampUi";
-import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import Link from "next/link";
 
 export default function Home() {
   return (
     <>
       <LampContainer>
         <motion.h1
-          initial={{ opacity: 0.5, y: 100 }}
+          initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
             delay: 0.3,
@@ -22,7 +20,7 @@ export default function Home() {
           Hi Their <br /> I'm Himanshu
         </motion.h1>
         <motion.p
-          initial={{ opacity: 0.5, y: 100 }}
+          initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
             delay: 0.3,

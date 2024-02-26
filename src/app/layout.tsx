@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <div>
-          <div className=" fixed bg-transparent z-50">
+          <div className=" fixed bg-transparent z-50 w-full">
             <Navbar />
           </div>
           {children}
