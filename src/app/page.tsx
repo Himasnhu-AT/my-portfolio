@@ -29,8 +29,7 @@ export default function Home() {
           }}
           className="bg-gradient-to-br from-slate-300 to-slate-500 bg-clip-text text-transparent"
         >
-          I'm a full stack developer (AI and blockchain too :)) and I love to
-          build amazing products.
+          Coder at Day, Reader by Night. Writer on Weekends.
         </motion.p>
       </LampContainer>
     </>

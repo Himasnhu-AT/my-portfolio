@@ -34,6 +34,9 @@ const MobileScreen = () => {
           <Link href="/experience">
             <li className="mx-2">Experience</li>
           </Link>
+          <Link href="https://himasnhu-at.hashnode.dev/">
+            <li className="mx-2">Blog</li>
+          </Link>
           <Link href="/contact">
             <li className="mx-2">Contact</li>
           </Link>
